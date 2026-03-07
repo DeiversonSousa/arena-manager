@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cammpeonato</title>
+    <title>Arena Brasil - Gerenciador de Campeonatos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,62 +13,64 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="/index.html" id="logo-topo">
-                <img src="img/logo.jpeg" id="logo" alt="logo"/>
-            </a>
-            <nav>
-                <a href="">Home</a>
-                <a href="">Sobre</a>
-                <a href="">Campeonatos</a>
-                <a href="">Planos</a>
-                <a href="">Contato</a>
-            </nav>
-            <div class="login">
-                <a>
-                    <button href="/Login" type="button" class="btn btn-success">Login</button>
+    <div class="background-1">
+        <header>
+            <div class="container">
+                <!-- Aqui é minha logo do navegador -->
+                <a href="/index.html" id="logo-topo">
+                    <img src="img/logo.png" id="logo" alt="logo do aplicativo"/>
                 </a>
-                <a>
-                    <button href="/Login" type="button" class="btn btn-success">Registrar</button>
-                </a>
+                <!-- fim da logo do navegador -->
+                 <!-- Navegador do site -->
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Campeonatos</a>
+                    <a href="">Planos</a>
+                    <a href="">Contato</a>
+                </nav>
+                <!-- fim do navegador -->
+                 <!-- login e registro -->
+                <div class="login">
+                    <a>
+                        <button href="/#login" type="button" class="btn btn-success">Login</button>
+                    </a>
+                    <a>
+                        <button href="#registro" type="button" class="btn btn-success">Registrar</button>
+                    </a>
+                </div>
+                <!-- fim do login e registro -->
             </div>
-        </div>
-    </header>
- <main> 
-    <div class="headline">
-        <h1 class="frase-gestao">GESTÃO PROFISSIONAL DE <span class="words-wrappen"> </span><span>AMADOR</span>
-           <!--  <b class="is visible">
-                            <i class="in">F</i>
-                            <i class="in">U</i>
-                            <i class="in">T</i>
-                            <i class="in">E</i>
-                            <i class="in">B</i>
-                            <i class="in">O</i>
-                            <i class="in">L</i>
-                        </b>
-                    !---- <b class="is-hidden"> 
-                            <i class="out">C</i>
-                            <i class="out">A</i>
-                            <i class="out">M</i>
-                            <i class="out">P</i>
-                            <i class="out">E</i>
-                            <i class="out">O</i>
-                            <i class="out">N</i>
-                            <i class="out">A</i>
-                            <i class="out">T</i>
-                            <i class="out">O</i>
-                        </b> -->                   
-            </h1>
-         <h3 class="frase-em-branco">Gestão completa de ligas e torneios, tornando os campeonatos mais fáceis de organizar, jogar e acompanhar.</h3>
-         <a href="home">
-            <button type="button" class="organizar">ORGANIZAR UM CAMPEONATO</button>
-         </a>    
-         <form class="search-bar">
-            <input type="text" placeholder="Procure um campeonato ou a equipe">
-            <button type="submit">🔍</button>
-        </form>           
-    </div> 
-</main>                 
+        </header>
+        <!-- fim do cabeçalho -->
+    <main> 
+        <!-- texto do meio da pagina -->
+        <div class="headline">
+            <h1 class="frase-gestao">GESTÃO PROFISSIONAL DE <span class="words-wrappen"> </span><span>AMADOR</span></h1>
+            <h3 class="frase-em-branco">Gestão completa de ligas e torneios, tornando os campeonatos mais fáceis de organizar, jogar e acompanhar.</h3>
+            <!-- fim do texto do meio -->
+             <!-- botão do meio da pagina -->
+            <div class="planosvip">
+                <a href="#planos">
+                    <button type="button" class="organizar">ORGANIZAR UM CAMPEONATO</button>
+                </a>   
+            </div> 
+            <!--  fim do botão do meio -->
+              <!-- barra de pesquisa por campeonatos -->
+            <form class="search-bar">
+                <input type="text" placeholder="Procure um campeonato ou a equipe">
+                <button type="submit">🔍</button>
+            </form>  
+            <!-- fim da barra de pesquisa -->
+            <div class="informacoes">
+                <p><span>+2000</span></br>Equipes</p>
+                <p><span>+2000</span></br>Competições</p>
+                <p><span>+2000</span></br>Clientes</p>
+            </div>
+        </div> 
+    </main> 
+</div> 
+
+
 </body>
 </html>
