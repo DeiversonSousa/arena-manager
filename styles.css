@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Barlow', sans-serif;
     margin: 0;
 }
 
@@ -11,15 +11,29 @@ header {
     rgba(77, 78, 80, 0.6) 50%,
     rgba(77, 78, 80, 0) 100%
     );
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    position: relative;
 }
+
+ #logo-topo h1{
+    font-family: 'Barlow', sans-serif; 
+    font-size: 30px;  
+    font-weight: 600px;
+ }
+.btn{
+    background-color: #ff4d00;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 /* conteiner do menu de navegação */
-header .container {
+.container {
     padding: 0px 15px 0px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    max-width: 1440px;
 }
 
 header .container nav a {
@@ -33,12 +47,8 @@ header .container nav a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: green;
+    background-color: #d14002;
     transition: width 0.3s ease;
-}
-
-header .container nav a:hover::after {
-    width: 100%;
 }
 
 header .container nav a {
@@ -46,6 +56,10 @@ header .container nav a {
     margin: 0 15px;
     transition: all 0.3s ease-out 0s;
 } 
+
+header .container nav a:hover::after {
+    width: 100%;
+}
 /* fim do efeito ao passar mouse no navegador */
 /* tamanho da logo */
 header .container #logo-topo img{
@@ -58,12 +72,13 @@ header .container .login{
     align-items: center;
 }
 /* fim do conteiner e login */
+/* links */
 a {
     cursor: pointer;
     text-decoration: none;
     color: white
 }
-
+/* imagens */
 img {
     max-width: 100%;
     height: auto;
@@ -71,24 +86,64 @@ img {
     overflow: clip;
 }
 
+.icone-menu{
+    display: none;
+}
+
+/* Responsivo */
+@media(max-width: 960px){
+    .icone-menu{
+        display: block;
+}
+    nav{
+        position: fixed;
+        background: red;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+    }
+    .login{
+        position: fixed;
+        background: red;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;        
+    }
+}
+
+/* background - fundo */
 .background-1{
     background-color: black;
     margin: 0;
-    background: url("img/background.jpg") no-repeat center center fixed;
+    /*
+    background: url("img/background-1.jpg") no-repeat center center fixed;*/
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     position: relative;
+    transition: background-image 2s ease-in-out;
+}
+.background-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* camada escura */
+  z-index: 0;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6); /* controla o nível de escuridão */
-    z-index: -1;
+main {
+  position: relative;
+  z-index: 1; /* conteúdo acima da camada escura */
+  padding: 50px;
 }
 /* texto do meio */ 
 .headline{
-    width: 1000px;
+    width: 900px;
     height: 530px;
     display: flex;
     flex-direction: column;
@@ -102,8 +157,14 @@ body::before {
 }
 
 .headline .frase-gestao{
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: 600;
 }
+
+.words-wrappen{
+    color: #ff4d00;
+}
+/* End texto do meio */
 /* barra de pesquisa */
 .search-bar {
     display: flex;
@@ -129,7 +190,7 @@ body::before {
 /* Botão de pesquisa */
 .search-bar button {
     border: none;
-    background-color: green;
+    background-color: #ff4d00;
     color: white;
     padding: 0 20px;
     cursor: pointer;
@@ -139,7 +200,7 @@ body::before {
 }
 
 .search-bar button:hover {
-    background-color: darkgreen;
+    background-color: #d14002;
 }
 /* fim do botão de pesquisar */
 
@@ -151,25 +212,25 @@ body::before {
 }
 /* Barra de pesquisa */
 .organizar{
-background-color: #4CAF50;
+background-color: #ff4d00;
 color: white;
 border: none;
 padding: 10px 20px;
 font-size: 16px;
+font-weight: 600;
 cursor: pointer;
 border-radius: 5px;
 margin-top: 50px;
 }
 
 .organizar:hover {
-    background-color: #45a049;
+    background-color: #d14002;
 }
 /* fim da barra de pesquisa */
 .headline .informacoes{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
 }
 .headline .informacoes p{
     text-align: center;
@@ -181,3 +242,40 @@ margin-top: 50px;
     font-size: 30px;
     font-weight: 600;
 }
+
+/* Inicio da section */
+section {
+    padding: 2.7rem 0;
+}
+/* first section */
+.info {
+    background-color: black;
+}
+
+.funcionamento{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side p{
+    border-radius: 2%;
+    
+}
+
+.left-side h2{
+    font-family: "Barlow", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.text-orange{
+    color: #ff4d00;
+}
+
+.now{
+    padding-top: 30px;
+}
+/* end first section */
