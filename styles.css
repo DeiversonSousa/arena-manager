@@ -2,11 +2,11 @@ body {
     font-family: 'Barlow', sans-serif;
     margin: 0;
 }
-
+/* verificar o que pode estar fora */
 * {
-    outline:1px solid red;
+   
 }
-
+/* padrão */
 *,
 *::before,
 *::after{
