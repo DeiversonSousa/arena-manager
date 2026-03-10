@@ -36,7 +36,14 @@ const divFundo = document.querySelector(".background-1");
 // START RESPONSIVE
 
 var menuIcon = document.querySelector('.icone-menu');
+var ul = document.querySelector('.ul');
 
 menuIcon.addEventListener('click', ()=>{
-    alert('itsa working')
+    if(ul.classList.contains('ativo')){
+        ul.classList.remove('ativo');
+        document.querySelector('.icone-menu img').src = 'img/menu.png';
+    }else{
+        ul.classList.add('ativo');
+        document.querySelector('.icone-menu img').src = 'img/close.png';
+    }
 })
