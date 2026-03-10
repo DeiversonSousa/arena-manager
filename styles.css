@@ -3,9 +3,10 @@ body {
     margin: 0;
 }
 /* verificar o que pode estar fora */
-* {
+/** {
     
 }
+*/
 /* padrão */
 *,
 *::before,
