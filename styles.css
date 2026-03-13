@@ -10,7 +10,7 @@ body {
 /* padrão */
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -18,42 +18,17 @@ body {
 
 /* Menu de navegação */
 header {  
-    background: linear-gradient(
-    to bottom,
-    rgba(77, 78, 80, 0.8) 0%,
-    rgba(77, 78, 80, 0.6) 50%,
-    rgba(77, 78, 80, 0) 100%
-    );
+    position: fixed;
+    background: linear-gradient(to bottom,rgba(77, 78, 80, 0.8) 0%,rgba(77, 78, 80, 0.6) 50%,rgba(77, 78, 80, 0) 100%);
     font-family: 'Barlow', sans-serif;
-    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
 }
 
- #logo-topo h1{
-    font-family: 'Barlow', sans-serif; 
-    font-size: 30px;  
-    font-weight: 600px;
- }
-.btn{
-    background-color: #ff4d00;
-    font-size: 15px;
-    font-weight: 500;
-}
 
-/* conteiner do menu de navegação */
-.container {
-    width: 100%;        /* sempre ocupa a tela */
-    max-width: 1440px;  /* limite em telas grandes */
-    padding: 0 20px;    /* espaço lateral */
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;    /* permite quebrar linha no mobile */
-}
 
-header .container nav a {
-    position: relative;
-}
 /* efeito ao passar mouse no navegador */
 header .container nav a::after {
     content: "";
@@ -70,6 +45,7 @@ header .container nav a {
     font-size: 16px;
     margin: 0 15px;
     transition: all 0.3s ease-out 0s;
+    position: relative;
 } 
 
 header .container nav a:hover::after {
@@ -101,12 +77,37 @@ img {
     overflow: clip;
 }
 
+ #logo-topo h1{
+    font-family: 'Barlow', sans-serif; 
+    font-size: 30px;  
+    font-weight: 600px;
+ }
+.btn{
+    background-color: #ff4d00;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: #d14002;;
+}
+
+/* conteiner do menu de navegação */
+.container {
+    width: 100%;        /* sempre ocupa a tela */
+    max-width: 1440px;  /* limite em telas grandes */
+    padding: 0 20px;    /* espaço lateral */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;    /* permite quebrar linha no mobile */
+}
+
 .icone-menu{
     display: none;
     z-index: 15;
 }
-
-
 
 /* background - fundo */
 .background-1{
@@ -134,7 +135,7 @@ img {
 main {
   position: relative;
   z-index: 1; /* conteúdo acima da camada escura */
-  padding: 50px 20px;
+  padding: 150px 20px;
 }
 /* texto do meio */ 
 .headline{
@@ -208,15 +209,16 @@ main {
 }
 /* Barra de pesquisa */
 .organizar{
-background-color: #ff4d00;
-color: white;
-border: none;
-padding: 10px 20px;
-font-size: 16px;
-font-weight: 600;
-cursor: pointer;
-border-radius: 5px;
-margin-top: 50px;
+    background-color: #ff4d00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: background-color 0.3s ease;
 }
 
 .organizar:hover {
@@ -256,16 +258,13 @@ section {
     justify-content: center;
 }
 
-.left-side p{
-    border-radius: 2%;
-    
-}
+
 .right-side{
     flex: 1;
     min-width: 0;
 }
 
-.right-side p{
+.right-side{
     overflow-wrap: break-word;
     text-align: center;
 }
@@ -332,16 +331,7 @@ section {
         html, body{
         overflow-x: hidden;
     }
-    .headline{
+    .headline,.text-orange,.now,.funcionamento{
         text-align: center;
-    }
-    .text-orange{
-        text-align: center;
-    }
-    .now{
-        text-align:center;
-    }
-    .funcionamento{
-        display: block;
     }
 }
