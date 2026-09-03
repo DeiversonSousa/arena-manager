@@ -32,7 +32,6 @@
                  <!-- Navegador do site -->
                   <div class="ul">
                 <nav>
-                    
                         <a href="">Home</a>
                         <a href="">Sobre</a>
                         <a href="">Campeonatos</a>
@@ -98,17 +97,124 @@
                 <p class="now">
                     Entenda como usar o <span class="text-orange">GoldePlaca</span> para organizar<br> qualquer campeonato de futebol amador.
                 </p>   
+                <div class="destaques-funcionamento" aria-label="Benefícios da plataforma">
+                    <div class="destaque-item">
+                        <span class="destaque-numero">01</span>
+                        <p><strong>Tudo em um só lugar</strong><br>Equipes, partidas e resultados organizados.</p>
+                    </div>
+                    <div class="destaque-item">
+                        <span class="destaque-numero">02</span>
+                        <p><strong>Atualização rápida</strong><br>Publique os placares em poucos cliques.</p>
+                    </div>
+                    <div class="destaque-item">
+                        <span class="destaque-numero">03</span>
+                        <p><strong>Mais tempo para o jogo</strong><br>Menos planilhas, mais campeonato.</p>
+                    </div>
+                </div>
             </div>
-            <div class="right-side">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat dolorem sed necessitatibus vitae, libero nulla autem explicabo praesentium voluptatem nesciunt, magni ipsum ex sequi minima laudantium quae error omnis?</p>    
-                <div class="conteudo"></div>
-                aqui vem todo conteudo e tutorial
-                </div>            
+            <div class="simulador" aria-label="Simulador de campeonato">
+                <div class="simulador-topo">
+                    <div>
+                        <p class="simulador-label">SIMULADOR DE GESTÃO</p>
+                        <h3 id="simulador-titulo">Cadastre suas equipes</h3>
+                    </div>
+                    <span class="simulador-contador"><span id="etapa-atual">1</span>/4</span>
+                </div>
+                <div class="etapas" role="tablist" aria-label="Etapas do campeonato">
+                    <button class="etapa ativa" type="button" data-etapa="0" role="tab" aria-selected="true">01 <span>Equipes</span></button>
+                    <button class="etapa" type="button" data-etapa="1" role="tab" aria-selected="false">02 <span>Partidas</span></button>
+                    <button class="etapa" type="button" data-etapa="2" role="tab" aria-selected="false">03 <span>Resultados</span></button>
+                    <button class="etapa" type="button" data-etapa="3" role="tab" aria-selected="false">04 <span>Classificação</span></button>
+                </div>
+                <div class="simulador-corpo">
+                    <div class="simulador-visual visual-equipes">
+                        <div class="equipe"><span class="escudo">A</span><strong>Vila Nova</strong><small>12 jogadores</small></div>
+                        <div class="equipe"><span class="escudo escudo-laranja">B</span><strong>Real Jardim</strong><small>15 jogadores</small></div>
+                        <div class="equipe"><span class="escudo escudo-cinza">C</span><strong>União FC</strong><small>11 jogadores</small></div>
+                    </div>
+                    <div class="simulador-visual visual-partidas oculto">
+                        <div class="partida"><span>Vila Nova</span><b>16:00</b><span>Real Jardim</span></div>
+                        <div class="partida"><span>União FC</span><b>18:00</b><span>Vila Nova</span></div>
+                        <div class="partida"><span>Real Jardim</span><b>20:00</b><span>União FC</span></div>
+                    </div>
+                    <div class="simulador-visual visual-resultados oculto">
+                        <div class="resultado"><span>Vila Nova</span><strong>3 <small>x</small> 1</strong><span>Real Jardim</span></div>
+                        <div class="resultado"><span>União FC</span><strong>2 <small>x</small> 2</strong><span>Vila Nova</span></div>
+                        <div class="resultado"><span>Real Jardim</span><strong>1 <small>x</small> 0</strong><span>União FC</span></div>
+                    </div>
+                    <div class="simulador-visual visual-classificacao oculto">
+                        <div class="tabela-linha tabela-cabecalho"><span>#</span><span>Equipe</span><span>PG</span><span>SG</span></div>
+                        <div class="tabela-linha"><span>1</span><strong>Vila Nova</strong><span>4</span><span>+2</span></div>
+                        <div class="tabela-linha"><span>2</span><strong>Real Jardim</strong><span>3</span><span>0</span></div>
+                        <div class="tabela-linha"><span>3</span><strong>União FC</strong><span>1</span><span>-2</span></div>
+                    </div>
+                </div>
+                <div class="simulador-rodape">
+                    <p id="simulador-descricao">Adicione equipes e deixe o sistema cuidar do resto.</p>
+                    <button class="proxima-etapa" type="button">Próxima etapa <span aria-hidden="true">→</span></button>
+                </div>
             </div>
         </div>    
     </div>
 </section>
+    <section class="planos" id="planos">
+        <div class="container">
+            <div class="planos-vip">
+                <div class="left-side">
+                    <p class="text-orange">PLANOS</p>
+                    <h2>
+                        <span class="text-orange">ESCOLHA</span> O PLANO<br> IDEAL PARA SUA<br> COMPETIÇÃO
+                    </h2> 
+                    <p class="now">
+                        Tenha as ferramentas certas para organizar<br> qualquer campeonato de futebol amador.
+                    </p>   
+                    <div class="destaques-funcionamento" aria-label="Vantagens dos planos">
+                        <div class="destaque-item">
+                            <span class="destaque-numero">01</span>
+                            <p><strong>Sem contrato longo</strong><br>Escolha o plano ideal para cada campeonato.</p>
+                        </div>
+                        <div class="destaque-item">
+                            <span class="destaque-numero">02</span>
+                            <p><strong>Configuração rápida</strong><br>Comece a organizar sua competição hoje.</p>
+                        </div>
+                        <div class="destaque-item">
+                            <span class="destaque-numero">03</span>
+                            <p><strong>Suporte especializado</strong><br>Conte com ajuda sempre que precisar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="planos-lista" aria-label="Planos disponíveis">
+                    <article class="plano-card">
+                        <p class="plano-tipo">Para começar</p>
+                        <h3>Essencial</h3>
+                        <p class="plano-descricao">O básico para tirar seu campeonato do papel.</p>
+                        <p class="plano-valor"><span>R$</span> 49<small>/mês</small></p>
+                        <ul class="beneficios">
+                            <li>Até 8 equipes</li>
+                            <li>Tabela de jogos e classificação</li>
+                            <li>Cadastro de atletas</li>
+                            <li>Resultados e artilharia</li>
+                        </ul>
+                        <a class="plano-botao" href="#registro">Escolher plano</a>
+                    </article>
 
+                    <article class="plano-card plano-destaque">
+                        <p class="plano-tipo">Mais completo</p>
+                        <h3>Profissional</h3>
+                        <p class="plano-descricao">Mais controle para competições que crescem.</p>
+                        <p class="plano-valor"><span>R$</span> 99<small>/mês</small></p>
+                        <ul class="beneficios">
+                            <li>Equipes ilimitadas</li>
+                            <li>Súmulas e estatísticas avançadas</li>
+                            <li>Notificações para os participantes</li>
+                            <li>Suporte prioritário</li>
+                        </ul>
+                        <a class="plano-botao" href="#registro">Escolher plano</a>
+                    </article>
+                </div>            
+            </div>
+        </div>
+    </section>
 
 </body>
     <script src="index.js"></script>
