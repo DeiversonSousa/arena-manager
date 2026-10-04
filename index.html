@@ -32,11 +32,11 @@
                  <!-- Navegador do site -->
                   <div class="ul">
                 <nav>
-                        <a href="">Home</a>
-                        <a href="">Sobre</a>
-                        <a href="">Campeonatos</a>
-                        <a href="">Planos</a>
-                        <a href="">Contato</a>
+                        <a href="#home">Home</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#campeonatos">Campeonatos</a>
+                        <a href="#planos">Planos</a>
+                        <a href="#contato">Contato</a>
                         
                 </nav>
                 </div>
@@ -59,7 +59,7 @@
             </div>
         </header>
         <!-- fim do cabeçalho -->
-    <main class="menu"> 
+    <main class="menu" id="home"> 
         <!-- texto do meio da pagina -->
         <div class="headline">
             <h1 class="frase-gestao">GESTÃO PROFISSIONAL DE <br/><span class="words-wrappen"> </span><span>&nbsp;AMADOR</span></h1>
@@ -86,7 +86,27 @@
         </div> 
     </main> 
 </div> 
-<section class="info">
+<section class="sobre" id="sobre">
+    <div class="container sobre-layout">
+        <div class="sobre-conteudo">
+            <p class="sobre-etiqueta">SOBRE A GOL DE PLACA</p>
+            <h2>Mais organização para quem faz o <span>futebol amador acontecer.</span></h2>
+            <p class="sobre-descricao">A Gol de Placa nasceu para facilitar a rotina de quem organiza campeonatos. Em vez de espalhar informações entre planilhas, mensagens e anotações, você acompanha a competição em um só lugar.</p>
+            <p class="sobre-descricao">Da montagem das equipes à divulgação dos resultados, a plataforma ajuda organizadores, atletas e torcedores a seguirem cada etapa do campeonato.</p>
+            <ul class="sobre-pontos">
+                <li><i class="fa-solid fa-people-group" aria-hidden="true"></i><span><strong>Prepare a competição</strong><small>Cadastre equipes e atletas com as informações organizadas.</small></span></li>
+                <li><i class="fa-solid fa-calendar-days" aria-hidden="true"></i><span><strong>Organize os jogos</strong><small>Monte partidas e rodadas para dar ritmo ao campeonato.</small></span></li>
+                <li><i class="fa-solid fa-chart-simple" aria-hidden="true"></i><span><strong>Acompanhe cada resultado</strong><small>Consulte placares e classificação durante a disputa.</small></span></li>
+            </ul>
+            <a class="sobre-botao" href="#planos">Conheça os planos <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="sobre-visual">
+            <img src="img/home-mockup.png" alt="Tela da plataforma de gestão de campeonatos com informações, partidas e classificação" />
+            <span class="sobre-legenda">Acompanhe as informações do campeonato em uma só plataforma.</span>
+        </div>
+    </div>
+</section>
+<section class="info" id="campeonatos">
     <div class="container">
         <div class="funcionamento">
             <div class="left-side">
@@ -215,6 +235,54 @@
             </div>
         </div>
     </section>
+
+    <section class="contato" id="contato">
+        <div class="container contato-wrap">
+            <div class="contato-texto">
+                <p class="text-orange">CONTATO</p>
+                <h2>Fale com a <span class="text-orange">Arena Brasil</span></h2>
+                <p class="contato-subtitulo">Quer organizar um campeonato, tirar dúvidas sobre planos ou solicitar uma demonstração? Nossa equipe está pronta para ajudar.</p>
+
+                <div class="contato-lista">
+                    <div class="contato-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Telefone</strong>
+                            <span>(62) 99266-5329</span>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <span>contato@arenabrasil.com</span>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Localização</strong>
+                            <span>Goiânia, Brasil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contato-form">
+                <div class="campo-duplo">
+                    <input type="text" placeholder="Seu nome" aria-label="Nome" />
+                    <input type="email" placeholder="Seu e-mail" aria-label="E-mail" />
+                </div>
+                <input type="text" placeholder="Assunto" aria-label="Assunto" />
+                <textarea placeholder="Sua mensagem" aria-label="Mensagem" rows="5"></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Arena Brasil. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
     <script src="index.js"></script>

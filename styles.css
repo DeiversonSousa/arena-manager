@@ -165,6 +165,8 @@ header .login a {
 
 .background-1 {
   position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   min-height: 100vh;
   background-color: var(--dark);
   background-position: center;
@@ -323,6 +325,148 @@ main {
   font-weight: 700;
 }
 
+.contato {
+  padding: 90px 20px 120px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 77, 0, 0.06));
+}
+
+.contato-wrap {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.rodape {
+  padding: 22px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--dark);
+  text-align: center;
+}
+
+.rodape p {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 13px;
+}
+
+.contato-texto h2 {
+  margin-top: 12px;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+  font-weight: 800;
+}
+
+.contato-subtitulo {
+  margin-top: 18px;
+  max-width: 540px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.contato-lista {
+  display: grid;
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.contato-item i {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 77, 0, 0.14);
+  color: var(--orange);
+  font-size: 18px;
+}
+
+.contato-item div {
+  display: grid;
+  gap: 4px;
+}
+
+.contato-item strong {
+  color: var(--white);
+  font-size: 15px;
+}
+
+.contato-item span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+
+.contato-form {
+  display: grid;
+  gap: 16px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.campo-duplo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--white);
+  padding: 14px 16px;
+  font-size: 15px;
+  outline: none;
+}
+
+.contato-form input::placeholder,
+.contato-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  border-color: rgba(255, 77, 0, 0.8);
+  box-shadow: 0 0 0 3px rgba(255, 77, 0, 0.12);
+}
+
+.contato-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contato-form button {
+  width: fit-content;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff6a1a, var(--orange));
+  color: var(--white);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.contato-form button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
 section {
   padding: 70px 20px;
 }
@@ -331,12 +475,129 @@ section {
   background: var(--dark);
 }
 
+.sobre {
+  scroll-margin-top: 110px;
+  background: radial-gradient(ellipse at 85% 50%, rgba(255, 77, 0, 0.09), transparent 42%), #0b0b0b;
+  border-block: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.sobre-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 64px;
+}
+
+.sobre-conteudo {
+  min-width: 0;
+}
+
+.sobre-etiqueta {
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.sobre-conteudo h2 {
+  margin-top: 14px;
+  font-size: 48px;
+  line-height: 1.08;
+  font-weight: 800;
+}
+
+.sobre-conteudo h2 span {
+  color: var(--orange);
+}
+
+.sobre-descricao {
+  max-width: 540px;
+  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.sobre-descricao + .sobre-descricao {
+  margin-top: 12px;
+}
+
+.sobre-pontos {
+  display: grid;
+  gap: 18px;
+  margin: 26px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sobre-pontos li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+
+.sobre-pontos i {
+  width: 20px;
+  margin-top: 3px;
+  color: var(--orange);
+  text-align: center;
+}
+
+.sobre-pontos li span {
+  display: grid;
+  gap: 4px;
+}
+
+.sobre-pontos small {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.sobre-botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  border: 1px solid var(--orange);
+  border-radius: 6px;
+  background: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.sobre-botao:hover {
+  background: var(--orange-dark);
+  transform: translateY(-1px);
+}
+
+.sobre-visual {
+  min-width: 0;
+  align-self: center;
+}
+
+.sobre-visual img {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+
+.sobre-legenda {
+  display: block;
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+  text-align: right;
+}
+
 .funcionamento {
   max-width: 1200px;
   margin: 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 200px;
+  gap: 300px;
 }
 
 .left-side,
@@ -786,7 +1047,20 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .sobre-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
   .planos-vip {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .campo-duplo {
     grid-template-columns: 1fr;
   }
 
@@ -798,6 +1072,14 @@ section {
 @media (max-width: 600px) {
   .container {
     padding: 0 16px;
+  }
+
+  .sobre-conteudo h2 {
+    font-size: 36px;
+  }
+
+  .sobre-visual img {
+    border-radius: 6px;
   }
 
   .search-bar {

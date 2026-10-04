@@ -35,6 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const isAtivo = menu.classList.toggle('ativo');
       menuIconImg.src = isAtivo ? 'img/close.png' : 'img/menu.png';
     });
+
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('ativo');
+        menuIconImg.src = 'img/menu.png';
+      });
+    });
   }
 
   const etapas = [...document.querySelectorAll('.etapa')];
